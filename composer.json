@@ -8,8 +8,7 @@
 		"drago-ex/application": "^1.0",
 		"drago-ex/translator": "^2.0",
 		"drago-ex/project-user": "^1.0",
-		"drago-ex/project-front": "^1.0",
-		"tracy/tracy": "^2.11"
+		"drago-ex/project-front": "^1.0"
 	},
 	"extra": {
 		"drago-project": {
@@ -22,7 +21,8 @@
 		}
 	},
 	"require-dev": {
-		"phpstan/phpstan-nette": "^1.2.9"
+		"phpstan/phpstan-nette": "^1.2.9",
+		"tracy/tracy": "^2.11"
 	},
 	"scripts": {
 		"phpstan": "phpstan analyse --level 5 --configuration phpstan.neon resources/app",
