@@ -1,7 +1,7 @@
 {
-	"name": "drago-ex/project-auth",
+	"name": "drago-ex/project-backend",
 	"type": "drago-project-resource",
-	"description": "Authentication and user access package for the Drago project.",
+	"description": "Preconfigured basic backend module for the basic Drago Project.",
 	"license": ["MIT"],
 	"require": {
 		"php": ">=8.3 <9",
