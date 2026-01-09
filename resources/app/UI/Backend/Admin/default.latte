@@ -2,7 +2,10 @@
 {varType App\Core\User\UserAccess $userAccess}
 
 {block content}
-	<h1 n:block="title" class="border-bottom pb-3 fw-normal">{_'Administration'}</h1>
-	<p>{_'If you see this page, it means you have successfully logged in.'}</p>
-	<p>{$userAccess->getUserIdentity()->username} (<a n:href="Sign:out">{_'Sign out'}</a>)</p>
+	<h1 n:block="title" class="display-6 fs-2">{_'Backend'}</h1>
+	<div class="text-center py-4 text-muted bg-light rounded">
+		<div class="fs-2 mb-2">🧑‍💻</div>
+		<p class="fw-semibold text-dark mb-1">Content not found. Developer awaited.</p>
+		<small>This section is ready for your admin implementation.</small>
+	</div>
 {/block}
