@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\UI\Backend\Admin;
 
 use App\Core\User\UserAccess;
-use App\Core\User\UserRequireLogged;
 use App\UI\BasePresenter;
 use Nette\DI\Attributes\Inject;
 
@@ -18,8 +17,6 @@ use Nette\DI\Attributes\Inject;
  */
 final class AdminPresenter extends BasePresenter
 {
-	use UserRequireLogged;
-
 	#[Inject]
 	public UserAccess $userAccess;
 
