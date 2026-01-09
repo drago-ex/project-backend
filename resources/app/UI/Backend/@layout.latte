@@ -15,7 +15,7 @@
 <body>
 
 {* main content *}
-<div class="container">
+<main role="main" class="mt-3 container">
 
 	{* flash messages *}
 	{snippet message}
@@ -24,7 +24,12 @@
 
 	{* page content *}
 	{include content}
-</div>
+</main>
+
+{* footer info *}
+<footer class="text-center mt-3 text-muted small">
+	✨ Vite + Nette &mdash; ready to code!
+</footer>
 
 </body>
 </html>
