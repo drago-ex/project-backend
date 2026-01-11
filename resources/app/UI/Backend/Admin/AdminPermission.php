@@ -16,6 +16,7 @@ final class AdminPermission implements Provider
 {
 	private const string Resource = 'Backend:Admin';
 
+
 	public function register(Permission $acl): void
 	{
 		$acl->addResource(self::Resource);
