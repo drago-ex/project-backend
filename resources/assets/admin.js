@@ -7,3 +7,7 @@ function registerExtensions(...extensions) {
 		naja.registerExtension(new Extension());
 	});
 }
+
+registerExtensions(
+	// naja extensions
+);
