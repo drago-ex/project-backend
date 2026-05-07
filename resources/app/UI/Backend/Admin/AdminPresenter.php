@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace App\UI\Backend\Admin;
 
-use App\Core\User\UserAccess;
 use App\UI\BasePresenter;
-use Nette\DI\Attributes\Inject;
 
 
 /**
@@ -17,13 +15,5 @@ use Nette\DI\Attributes\Inject;
  */
 final class AdminPresenter extends BasePresenter
 {
-	#[Inject]
-	public UserAccess $userAccess;
-
-
-	protected function beforeRender(): void
-	{
-		parent::beforeRender();
-		$this->template->userAccess = $this->userAccess;
-	}
+	// This class is currently empty.
 }
