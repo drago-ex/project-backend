@@ -22,6 +22,9 @@
 	"require-dev": {
 		"phpstan/phpstan-nette": "^1.2.9"
 	},
+	"bin": [
+		"bin/create-backend-permission",
+	],
 	"scripts": {
 		"phpstan": "phpstan analyse --level 5 --configuration phpstan.neon resources/app",
 		"post-install-cmd": [
