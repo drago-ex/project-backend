@@ -40,4 +40,4 @@ foreach ($args as $arg) {
 }
 
 passthru($command, $exitCode);
-exit((int) $exitCode)
+exit((int) $exitCode);
