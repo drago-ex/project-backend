@@ -1,7 +1,8 @@
-## Drago Project backend module
+# Drago Project backend module
+
 Preconfigured basic backend module for the basic Drago Project.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/project-backend/main/license)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/drago-ex/project-backend/blob/main/license)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fproject-backend.svg)](https://badge.fury.io/ph/drago-ex%2Fproject-backend)
 [![Coding Style](https://github.com/drago-ex/project-backend/actions/workflows/coding-style.yml/badge.svg)](https://github.com/drago-ex/project-backend/actions/workflows/coding-style.yml)
 
@@ -10,7 +11,7 @@ Preconfigured basic backend module for the basic Drago Project.
 - Nette Framework
 - Drago Project core packages
 
-## Install
+## Installation
 ```bash
 composer require drago-ex/project-backend
 ```
