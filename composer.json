@@ -16,6 +16,9 @@
 					"resources/app": "app",
 					"resources/assets": "assets"
 				}
+			},
+			"commands": {
+				"create:backend-permission": "php vendor/bin/create-backend-permission"
 			}
 		}
 	},
