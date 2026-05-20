@@ -30,7 +30,7 @@
 		"bin/create-backend-permission"
 	],
 	"scripts": {
-		"phpstan": "phpstan analyse --level 5 --configuration tests/phpstan/phpstan.neon resources/app",
+		"phpstan": "phpstan analyse",
 		"post-install-cmd": [
 			"drago-install --dev",
 			"drago-clean"
