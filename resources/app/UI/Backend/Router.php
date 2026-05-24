@@ -13,7 +13,6 @@ final class Router
 {
 	use Nette\StaticClass;
 
-
 	/** Create router. */
 	public static function create(): RouteList
 	{
