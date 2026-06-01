@@ -6,8 +6,10 @@
 	"require": {
 		"php": ">=8.3 <9",
 		"drago-ex/application": "^2.0",
-		"drago-ex/translator": "^3.0",
 		"drago-ex/project-front": "^2.0"
+	},
+	"suggest": {
+		"drago-ex/translator": "Configures Latte translation support for bundled templates using translation macros."
 	},
 	"extra": {
 		"drago-project": {
