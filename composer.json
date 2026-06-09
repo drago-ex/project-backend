@@ -29,7 +29,7 @@
 		"drago-ex/project-tools": "^1.0"
 	},
 	"bin": [
-	  "bin/create-permission"
+		"bin/create-permission"
 	],
 	"scripts": {
 		"phpstan": "phpstan analyse",
