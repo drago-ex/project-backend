@@ -27,7 +27,7 @@ if ($generator === null) {
 }
 
 $args = [
-	'AdminPermission',
+	'PermissionProvider',
 	'App\\UI\\Backend\\Admin',
 	'Backend:Admin',
 	'app/UI/Backend/Admin',
