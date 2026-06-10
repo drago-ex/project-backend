@@ -20,7 +20,7 @@
 				}
 			},
 			"commands": {
-				"create:backend-permission": "php vendor/bin/create-permission"
+				"create:backend-permission": "php vendor/bin/create-backend-permission"
 			}
 		}
 	},
@@ -29,7 +29,7 @@
 		"drago-ex/project-tools": "^1.0"
 	},
 	"bin": [
-		"bin/create-permission"
+		"bin/create-backend-permission"
 	],
 	"scripts": {
 		"phpstan": "phpstan analyse",
