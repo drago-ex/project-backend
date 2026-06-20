@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\UI\Backend;
+namespace App\Presentation\Backend;
 
-use App\UI\BaseTemplate;
+use App\Presentation\BaseTemplate;
 
 
 class BackendTemplate extends BaseTemplate

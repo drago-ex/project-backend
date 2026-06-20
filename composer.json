@@ -9,6 +9,7 @@
 		"drago-ex/project-front": "^2.0"
 	},
 	"suggest": {
+		"drago-ex/permission": "Enables generation of the backend permission provider.",
 		"drago-ex/translator": "Configures Latte translation support for bundled templates using translation macros."
 	},
 	"extra": {

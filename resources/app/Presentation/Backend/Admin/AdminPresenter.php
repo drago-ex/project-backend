@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\UI\Backend\Admin;
+namespace App\Presentation\Backend\Admin;
 
-use App\UI\Backend\BackendPresenter;
+use App\Presentation\Backend\BackendPresenter;
 
 
 /** @property-read AdminTemplate $template */
