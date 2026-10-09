@@ -1,7 +1,7 @@
 {
 	"name": "drago-ex/project-backend",
-	"type": "drago-tools-resource",
 	"description": "Preconfigured basic backend module for the basic Drago Project.",
+	"type": "drago-tools-resource",
 	"license": ["MIT"],
 	"require": {
 		"php": ">=8.3 <9",
@@ -11,6 +11,22 @@
 	"suggest": {
 		"drago-ex/permission": "Enables generation of the backend permission provider.",
 		"drago-ex/translator": "Configures Latte translation support for bundled templates using translation macros."
+	},
+	"require-dev": {
+		"phpstan/phpstan-nette": "^2.0",
+		"drago-ex/project-tools": "^1.0"
+	},
+	"bin": ["bin/create-backend-permission"],
+	"scripts": {
+		"phpstan": "phpstan analyse",
+		"post-install-cmd": [
+			"drago-install --dev",
+			"drago-clean"
+		],
+		"post-update-cmd": [
+			"drago-install --dev",
+			"drago-clean"
+		]
 	},
 	"extra": {
 		"drago-tools": {
@@ -24,23 +40,5 @@
 				"create:backend-permission": "php vendor/bin/create-backend-permission"
 			}
 		}
-	},
-	"require-dev": {
-		"phpstan/phpstan-nette": "^2.0",
-		"drago-ex/project-tools": "^1.0"
-	},
-	"bin": [
-		"bin/create-backend-permission"
-	],
-	"scripts": {
-		"phpstan": "phpstan analyse",
-		"post-install-cmd": [
-			"drago-install --dev",
-			"drago-clean"
-		],
-		"post-update-cmd": [
-			"drago-install --dev",
-			"drago-clean"
-		]
 	}
 }
