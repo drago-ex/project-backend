@@ -2,13 +2,12 @@
 
 Preconfigured backend module for Drago Project.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/drago-ex/project-backend/blob/main/license)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fproject-backend.svg)](https://badge.fury.io/ph/drago-ex%2Fproject-backend)
 [![Coding Style](https://github.com/drago-ex/project-backend/actions/workflows/coding-style.yml/badge.svg)](https://github.com/drago-ex/project-backend/actions/workflows/coding-style.yml)
 
 ## Requirements
 
-- PHP >= 8.3
+- PHP >= 8.3, < 9
 - Nette Framework
 - Drago Project core packages
 

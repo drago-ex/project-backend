@@ -2,7 +2,7 @@
 	"name": "drago-ex/project-backend",
 	"description": "Preconfigured basic backend module for the basic Drago Project.",
 	"type": "drago-tools-resource",
-	"license": ["MIT"],
+	"license": "MIT",
 	"require": {
 		"php": ">=8.3 <9",
 		"drago-ex/application": "^3.0",
@@ -16,7 +16,9 @@
 		"phpstan/phpstan-nette": "^2.0",
 		"drago-ex/project-tools": "^1.0"
 	},
-	"bin": ["bin/create-backend-permission"],
+	"bin": [
+		"bin/create-backend-permission"
+	],
 	"extra": {
 		"drago-tools": {
 			"install": {
