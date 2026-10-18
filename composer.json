@@ -16,9 +16,6 @@
 		"phpstan/phpstan-nette": "^2.0",
 		"drago-ex/project-tools": "^1.1"
 	},
-	"bin": [
-		"bin/create-backend-permission"
-	],
 	"extra": {
 		"drago-tools": {
 			"install": {
@@ -26,11 +23,9 @@
 					"resources/app": "app",
 					"resources/assets": "assets"
 				}
-			},
-			"commands": {
-				"create:backend-permission": "php vendor/bin/create-backend-permission"
 			}
-		}
+		},
+		"drago-permission": "permission.php"
 	},
 	"scripts": {
 		"phpstan": "phpstan analyse",
