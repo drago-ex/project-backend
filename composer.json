@@ -13,12 +13,10 @@
 		"drago-ex/translator": "Configures Latte translation support for bundled templates using translation macros."
 	},
 	"require-dev": {
+		"nette/tester": "^2.5",
 		"phpstan/phpstan-nette": "^2.0",
-		"drago-ex/project-tools": "^1.0"
+		"drago-ex/project-tools": "^2.0"
 	},
-	"bin": [
-		"bin/create-backend-permission"
-	],
 	"extra": {
 		"drago-tools": {
 			"install": {
@@ -26,14 +24,13 @@
 					"resources/app": "app",
 					"resources/assets": "assets"
 				}
-			},
-			"commands": {
-				"create:backend-permission": "php vendor/bin/create-backend-permission"
 			}
-		}
+		},
+		"drago-permission": "permission.php"
 	},
 	"scripts": {
 		"phpstan": "phpstan analyse",
+		"tester": "tester tests -s -C",
 		"post-install-cmd": [
 			"drago-install --dev",
 			"drago-clean"
