@@ -7,7 +7,7 @@ namespace App\Presentation\Backend;
 use App\Presentation\BasePresenter;
 
 
-/** @property BackendTemplate $template */
+/** @property-read BackendTemplate $template */
 class BackendPresenter extends BasePresenter
 {
 }

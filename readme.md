@@ -25,6 +25,13 @@ which must be installed in your project. Without it, copy the files manually acc
 in this package's `composer.json`. To skip this package, set `"skip": true` under
 `extra.drago-tools.packages.<package-name>` in your root `composer.json`.
 
+## Access
+
+The module itself has no sign-in check, so `/admin` is open until access control is added: the
+`RequireLogged` trait of [drago-ex/project-auth](https://github.com/drago-ex/project-auth) in `BackendPresenter`,
+or [drago-ex/project-backend-ui](https://github.com/drago-ex/project-backend-ui), which replaces the presenter
+with a signed-in administration.
+
 ## Permission provider
 
 With [drago-ex/permission](https://github.com/drago-ex/permission), the access rules from [`permission.php`](permission.php)
