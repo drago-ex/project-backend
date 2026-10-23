@@ -1,5 +1,7 @@
 # Drago Project backend module
 
+English | [Čeština](readme.cs.md)
+
 Preconfigured backend module for Drago Project.
 
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fproject-backend.svg)](https://badge.fury.io/ph/drago-ex%2Fproject-backend)
