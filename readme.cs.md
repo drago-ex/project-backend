@@ -1,7 +1,5 @@
 # Drago Project backend module
 
-[English](readme.md) | Čeština
-
 Připravený modul administrace pro Drago Project.
 
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fproject-backend.svg)](https://badge.fury.io/ph/drago-ex%2Fproject-backend)
