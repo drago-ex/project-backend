@@ -24,9 +24,11 @@
 					"resources/app": "app",
 					"resources/assets": "assets"
 				}
-			}
-		},
-		"drago-permission": "permission.php"
+			},
+			"commands": [
+				"bin/create-backend-permission"
+			]
+		}
 	},
 	"scripts": {
 		"phpstan": "phpstan analyse",
