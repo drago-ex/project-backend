@@ -1,4 +1,4 @@
 services:
 
 	router: {setup: {add(@router.backend)}}
-	router.backend: {factory: App\Presentation\Backend\Router::create, autowired: no}
+	router.backend: {factory: App\Presentation\Backend\BackendRouter::create, autowired: no}
