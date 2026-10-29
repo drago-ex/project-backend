@@ -1,10 +1,8 @@
-<?php
+<?php declare(strict_types=1);
 
 /**
  * Test: App\Presentation\Backend\BackendRouter
  */
-
-declare(strict_types=1);
 
 use App\Presentation\Backend\BackendRouter;
 use Nette\Http\Request;
