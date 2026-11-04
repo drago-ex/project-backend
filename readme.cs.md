@@ -29,17 +29,7 @@ trait `RequireLogged` z [drago-ex/project-auth](https://github.com/drago-ex/proj
 nebo [drago-ex/project-backend-ui](https://github.com/drago-ex/project-backend-ui), který presenter nahradí
 administrací pro přihlášené.
 
----
+## Pravidla přístupu
 
-## Volitelné doplňky
-
-Balíček funguje i bez nich. Pokud je projekt potřebuje, nastavte je ručně podle popisu níže.
-
-### Provider oprávnění
-
-S [drago-ex/permission](https://github.com/drago-ex/permission) se pravidla přístupu z [`bin/create-backend-permission`](bin/create-backend-permission)
-vygenerují do projektu příkazem:
-
-```bash
-php vendor/bin/drago-commands
-```
+Pravidla přístupu jsou v `app/Presentation/Backend/Admin/acl.neon`: zdroj `Backend:Admin` jen pro administrátora.
+[drago-ex/permission](https://github.com/drago-ex/permission) je sloučí se svými výchozími rolemi, ve kterých administrátor smí všechno.

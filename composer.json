@@ -7,10 +7,8 @@
 		"php": ">=8.3 <9",
 		"drago-ex/translator": "^4.0.1",
 		"drago-ex/application": "^4.0",
-		"drago-ex/project-front": "^3.0"
-	},
-	"suggest": {
-		"drago-ex/permission": "Enables generation of the backend permission provider."
+		"drago-ex/project-front": "^3.0",
+		"drago-ex/permission": "^2.0"
 	},
 	"require-dev": {
 		"nette/tester": "^2.5",
@@ -24,10 +22,7 @@
 					"resources/app": "app",
 					"resources/assets": "assets"
 				}
-			},
-			"commands": [
-				"bin/create-backend-permission"
-			]
+			}
 		}
 	},
 	"scripts": {

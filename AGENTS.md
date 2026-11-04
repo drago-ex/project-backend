@@ -11,7 +11,7 @@ Use this file as package-specific guidance when working in this repository. Keep
 - **License**: MIT
 
 ## Repository Layout
-- `bin/create-backend-permission`: generates the basic access rules (permission providers) with `create-permission` of `drago-ex/permission`; listed in `extra.drago-tools.commands` and run by `drago-commands` of drago-ex/project-tools. Existing providers are kept; without drago-ex/permission it does nothing.
+- `resources/app/Presentation/Backend/Admin/acl.neon`: the ACL of the package (resources = presenter names, rules only for roles other than the administrator), merged by Nette with `role.acl.neon` of drago-ex/permission (required); a new presenter gets its resource in the `acl.neon` next to it. No bin script or providers.
 - `resources/`: application resources contributed to the consuming Drago project.
 - `tests/`: automated tests.
 - `.github/`: CI workflows; keep their PHP versions and commands consistent with Composer and the package scripts.
