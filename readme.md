@@ -34,3 +34,5 @@ For the administration layout with a sidebar menu, sign-in and the user menu, ad
 Every presenter is checked by the ACL. The rules are in `Backend/Admin/acl.neon`: the resource `Backend:Admin`,
 for the administrator only; a guest is sent to the sign-in page of
 [Project Auth](https://github.com/drago-ex/project-auth).
+
+The same file describes the privileges (`permissionLabels`) for the permissions page of [Project Permission](https://github.com/drago-ex/project-permission).
