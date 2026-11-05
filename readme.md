@@ -1,6 +1,7 @@
-# Drago Project backend module
+# Drago Project Backend
 
-Preconfigured backend module for Drago Project.
+The administration module of Drago Project: the `Backend` presenters under `/admin`, a basic layout, the
+dashboard page and the `admin.js`/`admin.scss` entry point. Feature packages add their pages to it.
 
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fproject-backend.svg)](https://badge.fury.io/ph/drago-ex%2Fproject-backend)
 [![Tests](https://github.com/drago-ex/project-backend/actions/workflows/tests.yml/badge.svg)](https://github.com/drago-ex/project-backend/actions/workflows/tests.yml)
@@ -17,19 +18,19 @@ Preconfigured backend module for Drago Project.
 composer require drago-ex/project-backend
 ```
 
-## Files copied into the project
+[Project Tools](https://github.com/drago-ex/project-tools) copies the files of the package into the project,
+where you adapt them.
 
-The files are copied into the project by [drago-ex/project-tools](https://github.com/drago-ex/project-tools),
-as set in `extra.drago-tools` of this package's `composer.json`.
+## Usage
 
-## Access
+The route `[<lang>/]admin/<presenter>/<action>` is added by `Backend/8.conf.neon`; the dashboard is
+`:Backend:Admin:default`. Presenters of the module extend `App\Presentation\Backend\BackendPresenter`.
 
-The module itself has no sign-in check, so `/admin` is open until access control is added: the
-`RequireLogged` trait of [drago-ex/project-auth](https://github.com/drago-ex/project-auth) in `BackendPresenter`,
-or [drago-ex/project-backend-ui](https://github.com/drago-ex/project-backend-ui), which replaces the presenter
-with a signed-in administration.
+For the administration layout with a sidebar menu, sign-in and the user menu, add
+[Backend UI](https://github.com/drago-ex/project-backend-ui).
 
-## Access rules
+## Permissions
 
-The access rules are in `app/Presentation/Backend/Admin/acl.neon`: the resource `Backend:Admin`, for the administrator only.
-[drago-ex/permission](https://github.com/drago-ex/permission) merges them with its base roles, in which the administrator is allowed everything.
+Every presenter is checked by the ACL. The rules are in `Backend/Admin/acl.neon`: the resource `Backend:Admin`,
+for the administrator only; a guest is sent to the sign-in page of
+[Project Auth](https://github.com/drago-ex/project-auth).
