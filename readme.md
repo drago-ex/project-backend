@@ -19,7 +19,8 @@ composer require drago-ex/project-backend
 ```
 
 [Project Tools](https://github.com/drago-ex/project-tools) copies the files of the package into the project,
-where you adapt them.
+where you adapt them. It adds the entry point `assets/admin.js` + `admin.scss`, so build the assets again
+(`npm run vite:build`).
 
 ## Usage
 
@@ -32,7 +33,7 @@ For the administration layout with a sidebar menu, sign-in and the user menu, ad
 ## Permissions
 
 Every presenter is checked by the ACL. The rules are in `Backend/Admin/acl.neon`: the resource `Backend:Admin`,
-for the administrator only; a guest is sent to the sign-in page of
-[Project Auth](https://github.com/drago-ex/project-auth).
+open to everyone, so the bare module works without sign-in. [Project Auth](https://github.com/drago-ex/project-auth)
+replaces the file and leaves the administration to the administrator; a guest then goes to its sign-in page.
 
 The same file describes the privileges (`permissionLabels`) for the permissions page of [Project Permission](https://github.com/drago-ex/project-permission).

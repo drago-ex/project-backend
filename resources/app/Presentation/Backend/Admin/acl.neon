@@ -1,4 +1,5 @@
-# The administration; administrators are allowed everything (permission).
+# The bare administration: everyone may open the dashboard, so the module works without sign-in; project-auth
+# replaces this file with the sign-in and leaves the administration to the administrator.
 parameters:
 	# descriptions for the permissions page of drago-ex/project-permission
 	permissionLabels:
@@ -9,3 +10,7 @@ parameters:
 security:
 	resources:
 		Backend:Admin:
+
+	rules:
+		allow:
+			- [guest, Backend:Admin]
